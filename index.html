@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Latihan 2 Form</title>
+    </head>
+    <style>
+label {display: inline-block; width : 100px; }
+
+input[type=Name] {
+  width: 200px;
+  padding: 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=Email] {
+  width: 300px;
+  padding: 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=postal_Code] {
+  width: 170px;
+  padding: 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=Name]:focus {
+  background-color: lightblue;
+}
+
+input[type=Email]:focus {
+  background-color: lightgray;
+}
+
+input[type=postal_Code]:focus {
+  background-color: lightgreen;
+}
+</style>
+</head>
+<body>
+
+<form>
+  <label for="fname">Name:</label>
+  <input type="Name" id="fname" name="fname" placeholder="Your name here">
+  <br>
+
+  <label for="email">Email:</label>
+  <input type="Email" id="email" name="email" placeholder="Your email here">
+  <br>
+
+<label for="address" style="height: 30px;">Address:</label>
+<textarea id="w3review" name="w3review" rows="4" cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+<br>
+
+  <label for="postalCode">Postal Code:</label>
+  <input type="postal_Code" id="postalCode" name="postalCode" placeholder="postal code">
+  <br>
+
+</form>
+
+</body>
+</html>
