@@ -4,19 +4,27 @@
        <title>Latihan 2 Form</title>
     </head>
     <style>
-    
+    fieldset {
+  width: 420px;
+  height: 300px;
+  padding: 10px;
+  border: 3px ridge #ccc;
+  overflow-y: scroll;
+    }
     textarea {
   width: 200px;
   padding: 5px;
+  height: 70px;
   resize: none;
   vertical-align: middle;
+  overflow-y: scroll;
 
 }
 label {display: inline-block; width : 100px; }
 
 input[type=Name] {
-  width: 200px;
-  padding: 5px;
+  width: 250px;
+  padding: 4px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid #555;
@@ -25,7 +33,7 @@ input[type=Name] {
 
 input[type=Email] {
   width: 300px;
-  padding: 5px;
+  padding: 4px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid #555;
@@ -34,7 +42,7 @@ input[type=Email] {
 
 input[type=postal_Code] {
   width: 170px;
-  padding: 5px;
+  padding: 4px;
   margin: 5px 0;
   box-sizing: border-box;
   border: 1px solid #555;
@@ -55,7 +63,7 @@ input[type=postal_Code]:focus {
 </style>
 </head>
 <body>
-
+<fieldset>
 <form>
   <label for="fname">Name:</label>
   <input type="Name" id="fname" name="fname" placeholder="Your name here">
@@ -66,7 +74,11 @@ input[type=postal_Code]:focus {
   <br>
 
 <label for="address" style="height: 30px;">Address:</label>
-<textarea id="w3review" name="w3review" rows="4" cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+<textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="25 Nowhere Street
+Somewhere
+Not Here
+Y2K 5RU">
+</textarea>
 <br>
 
   <label for="postalCode">Postal Code:</label>
@@ -74,6 +86,6 @@ input[type=postal_Code]:focus {
   <br>
 
 </form>
-
+</fieldset>
 </body>
 </html>
